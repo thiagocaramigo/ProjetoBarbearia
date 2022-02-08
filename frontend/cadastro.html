@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://cdn1.iconfinder.com/data/icons/male-hairstyles/96/08-512.png" />
+    <title>Cadastro do Corte</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    
+
+ <!-- ###############   Início da barra de navegação ############### -->
+
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+    
+        <img src="https://cdn1.iconfinder.com/data/icons/male-hairstyles/96/08-512.png"
+         width="30" height="24" alt="Logo do Projeto Teste">
+         Barbearia
+        
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cadastro.html">Cadastro</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- ############### Fim da barra de navegacação ################## -->
+
+
+
+ <!-- ############### Início da área de produtos ################### -->
+
+
+ <div class="container-fluid">
+
+    <h2>Cadastro do Corte</h2>
+    <hr>
+    
+        <div id="formulario">
+
+            <form class="row g-3" style="width: 50%; margin:auto" onsubmit="return false">
+                <div class="col-12">
+
+                  <label for="txtNomeProduto" class="form-label">Corte</label>
+                  <input type="text" class="form-control" id="txtNomeProduto">
+
+                </div>
+
+                <div class="col-12">
+                  <label for="txtDescricao" class="form-label">Descrição</label>
+                  <input type="text" class="form-control" id="txtDescricao">
+                </div>
+
+                
+                <div class="col-12">
+                  <label for="txtPreco" class="form-label">Preço</label>
+                  <input type="text" class="form-control" id="txtPreco">
+                </div>
+
+
+                <div class="col-12">
+                  <label for="txtFoto" class="form-label">Foto do Corte</label>
+                  <input type="text" class="form-control" id="txtFoto">
+                </div>
+
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary" onclick="cadastrar();"> Cadastrar </button>
+                </div>
+              </form>
+
+
+        </div>
+
+  </div>
+
+<!-- ############## Fim da área de produtos ####################### -->
+
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/acao.js"></script>
+</body>
+</html>
